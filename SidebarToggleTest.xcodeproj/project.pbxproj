@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		14D25E8A24EEEF7700D37153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D25E8924EEEF7700D37153 /* AppDelegate.swift */; };
-		14D25E8C24EEEF7700D37153 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D25E8B24EEEF7700D37153 /* ViewController.swift */; };
 		14D25E8E24EEEF7800D37153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D25E8D24EEEF7800D37153 /* Assets.xcassets */; };
 		14D25E9124EEEF7800D37153 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D25E8F24EEEF7800D37153 /* Main.storyboard */; };
+		14D25E9A24EEF0CB00D37153 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D25E9924EEF0CB00D37153 /* MainWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14D25E8624EEEF7700D37153 /* SidebarToggleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarToggleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D25E8924EEEF7700D37153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14D25E8B24EEEF7700D37153 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14D25E8D24EEEF7800D37153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14D25E9024EEEF7800D37153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14D25E9224EEEF7800D37153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14D25E9324EEEF7800D37153 /* SidebarToggleTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SidebarToggleTest.entitlements; sourceTree = "<group>"; };
+		14D25E9924EEF0CB00D37153 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				14D25E8924EEEF7700D37153 /* AppDelegate.swift */,
-				14D25E8B24EEEF7700D37153 /* ViewController.swift */,
+				14D25E9924EEF0CB00D37153 /* MainWindowController.swift */,
 				14D25E8D24EEEF7800D37153 /* Assets.xcassets */,
 				14D25E8F24EEEF7800D37153 /* Main.storyboard */,
 				14D25E9224EEEF7800D37153 /* Info.plist */,
@@ -132,8 +132,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14D25E8C24EEEF7700D37153 /* ViewController.swift in Sources */,
 				14D25E8A24EEEF7700D37153 /* AppDelegate.swift in Sources */,
+				14D25E9A24EEF0CB00D37153 /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

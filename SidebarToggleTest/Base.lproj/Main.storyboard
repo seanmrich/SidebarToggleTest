@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17154" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="j8R-8I-Tti">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17154"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,45 +676,111 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="SidebarToggleTest" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
         <!--Window Controller-->
-        <scene sceneID="R2V-B0-nI4">
+        <scene sceneID="4rv-wy-yKG">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                <windowController id="j8R-8I-Tti" customClass="MainWindowController" customModule="SidebarToggleTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="wWT-xg-9in">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <rect key="contentRect" x="196" y="239" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
+                        <view key="contentView" id="uc9-4B-HGQ">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <toolbar key="toolbar" implicitIdentifier="09D11707-F4A3-4FD5-970E-AC5832E91C2B" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="clM-fe-fnZ">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="18C34491-E1C7-4F64-9EE6-C276A9CD15FE" explicitItemIdentifier="NSToolbarToggleSidebarItem" label="Sidebar" paletteLabel="Sidebar" tag="-1" navigational="YES" id="HtV-au-wOe">
+                                    <imageReference key="image" image="sidebar.leading" catalog="system" symbolScale="large"/>
+                                    <size key="minSize" width="55.5" height="30"/>
+                                    <size key="maxSize" width="55.5" height="30"/>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="8lM-l6-7a2"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="i1e-n6-STG"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="rFu-Jb-Iub"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="qRT-fd-ZVV"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="yir-tZ-kME"/>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="HtV-au-wOe"/>
+                                <toolbarItem reference="8lM-l6-7a2"/>
+                                <toolbarItem reference="i1e-n6-STG"/>
+                                <toolbarItem reference="yir-tZ-kME"/>
+                                <toolbarItem reference="rFu-Jb-Iub"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
-                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                            <outlet property="delegate" destination="j8R-8I-Tti" id="Kwa-Rx-v11"/>
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="CCJ-Ri-HSr" kind="relationship" relationship="window.shadowedContentViewController" id="LY9-aB-rFI"/>
                     </connections>
                 </windowController>
-                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="vog-dc-VNO" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="580" y="232"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="zeu-sZ-qy7">
+            <objects>
+                <splitViewController id="CCJ-Ri-HSr" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem canCollapse="YES" holdingPriority="260" behavior="sidebar" id="4ms-xz-yga"/>
+                        <splitViewItem id="8Q2-gp-5yP"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="XoC-2T-h33">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </splitView>
+                    <connections>
+                        <segue destination="Ryv-rL-f94" kind="relationship" relationship="splitItems" id="fJW-f2-Pdc"/>
+                        <segue destination="vhu-4d-jUp" kind="relationship" relationship="splitItems" id="XKQ-Ye-xOM"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="NBk-gP-uZB" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1272" y="236"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <scene sceneID="Evh-BK-iTP">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController id="Ryv-rL-f94" sceneMemberID="viewController">
+                    <view key="view" id="HTU-DM-E3u">
+                        <rect key="frame" x="0.0" y="0.0" width="149" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <viewLayoutGuide key="safeArea" id="G6W-v6-U2k"/>
+                        <viewLayoutGuide key="layoutMargins" id="Lwt-dC-63B"/>
                     </view>
                 </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="Yms-7k-K0O" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="1792" y="50"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Cu6-86-FQe">
+            <objects>
+                <viewController id="vhu-4d-jUp" sceneMemberID="viewController">
+                    <view key="view" id="Olv-Y8-KWg">
+                        <rect key="frame" x="0.0" y="0.0" width="302" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <viewLayoutGuide key="safeArea" id="Aqq-x6-ddz"/>
+                        <viewLayoutGuide key="layoutMargins" id="Sws-NS-3pk"/>
+                    </view>
+                </viewController>
+                <customObject id="oFi-l3-EgP" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868" y="422"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sidebar.leading" catalog="system" width="23" height="17"/>
+    </resources>
 </document>
